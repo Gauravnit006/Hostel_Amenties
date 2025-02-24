@@ -19,3 +19,4 @@ export async function updateHostel(id, hostel) {
   const { data } = await http.put(`/hostels/${id}`, hostel);
   return data;
 }
+// Adding the comment for testing github integration
