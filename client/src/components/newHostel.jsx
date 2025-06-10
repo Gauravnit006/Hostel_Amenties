@@ -52,55 +52,55 @@ class NewHostel extends Component {
     window.location = "/hostels";
   };
   render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input
-            onChange={(e) => this.handleNameChange(e)}
-            type="text"
-            value={this.state.name}
-            class="form-control"
-            id="name"
-            placeholder="Enter name of hostel"
-          />
-        </div>
-        <div class="form-group">
-          <label for="description">Description</label>
-          <input
-            onChange={(e) => this.handleDesChange(e)}
-            value={this.state.description}
-            type="text"
-            class="form-control"
-            id="description"
-            placeholder="Enter description about hostel"
-          />
-        </div>
-        <div class="form-group">
-          <label for="amenity">Amenities</label>
-          <input
-            onChange={(e) => this.handleIngChange(e)}
-            value={this.state.amenities}
-            type="text"
-            class="form-control"
-            id="amenity"
-            placeholder="Enter amenities provided by hostel (seperated by , )"
-          />
-        </div>
-        <div class="form-group">
-          <label for="steps">Remarks</label>
-          <input
-            onChange={(e) => this.handleStepsChange(e)}
-            value={this.state.steps}
-            type="text"
-            class="form-control"
-            id="steps"
-            placeholder="Enter remarks (seperated by , )"
-          />
-        </div>
-        <input className="btn btn-primary" type="submit" value="Submit" />
-      </form>
-    );
+      return (
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input
+              onChange={(e) => this.handleNameChange(e)}
+              type="text"
+              value={this.state.name}
+              className="form-control"
+              id="name"
+              placeholder="Enter name of hostel"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="description">Description</label>
+            <input
+              onChange={(e) => this.handleDesChange(e)}
+              value={this.state.description}
+              type="text"
+              className="form-control"
+              id="description"
+              placeholder="Enter description about hostel"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="amenity">Amenities</label>
+            <input
+              onChange={(e) => this.handleIngChange(e)}
+              value={this.state.amenities}
+              type="text"
+              className="form-control"
+              id="amenity"
+              placeholder="Enter amenities provided by hostel (seperated by , )"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="steps">Remarks</label>
+            <input
+              onChange={(e) => this.handleStepsChange(e)}
+              value={this.state.steps}
+              type="text"
+              className="form-control"
+              id="steps"
+              placeholder="Enter remarks (seperated by , )"
+            />
+          </div>
+          <input className="btn btn-primary" type="submit" value="Submit" />
+        </form>
+      );
   }
 }
 
