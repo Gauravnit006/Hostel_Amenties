@@ -5,7 +5,7 @@ const hostelSchema = mongoose.Schema({
     required: true,
   },
   amenities: {
-    type: Array,
+    type: Array, // Add another comment
   },
   author: {
     _id: String,
