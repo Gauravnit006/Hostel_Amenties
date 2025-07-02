@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); // add commit
 const hostelSchema = mongoose.Schema({
   name: {
     type: String,
