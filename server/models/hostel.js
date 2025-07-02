@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const hostelSchema = mongoose.Schema({
+const hostelSchema = mongoose.Schema({ // Add new comment
   name: {
     type: String,
     required: true,
