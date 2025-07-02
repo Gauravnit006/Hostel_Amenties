@@ -1,11 +1,11 @@
-const mongoose = require("mongoose"); // Add another comment
+const mongoose = require("mongoose"); // Add comment
 const hostelSchema = mongoose.Schema({
   name: {
     type: String,
     required: true,
   },
   amenities: {
-    type: Array,
+    type: Array, // Add another comment
   },
   author: {
     _id: String,
